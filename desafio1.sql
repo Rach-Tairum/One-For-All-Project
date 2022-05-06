@@ -17,7 +17,7 @@ CREATE TABLE SpotifyClone.artistas (
 CREATE TABLE SpotifyClone.usuarios (
 	usuario_id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
-    idade TINYINT,
+    idade TINYINT NOT NULL,
     plano_id INT NOT NULL,
     data_assinatura DATE NOT NULL,
     FOREIGN KEY (plano_id) REFERENCES planos(plano_id)
